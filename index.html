@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo</title>
+</head>
+<body>
+    <todo-app></todo-app>
+    <script type="module" src="/todo-app.js"></script>
+    <script>
+    window.addEventListener('load', () => {
+        document.querySelector('todo-app').todos = [
+            {text: "Make a todo list", checked: false},
+            {text: "Finish blog post", checked: true}
+        ];
+    });
+    </script>
+</body>
+</html>
