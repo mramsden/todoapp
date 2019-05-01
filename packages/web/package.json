@@ -1,0 +1,12 @@
+{
+  "name": "web",
+  "description": "Frontend web component for a todoapp",
+  "author": "Marcus Ramsden <marcus@bitsden.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "http-server -c-1 ."
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
