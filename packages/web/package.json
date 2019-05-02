@@ -7,7 +7,7 @@
     "start": "run-s watch",
     "build": "run-s build:*",
     "serve": "browser-sync start -s \"dist\" -f \"dist\"",
-    "build:assets": "copyfiles -u 1 \"src/**/*.html\" \"src/**/*.js\" dist",
+    "build:assets": "copyfiles -u 1 \"src/**/*.html\" \"src/**/*.png\" dist",
     "build:tsc": "tsc",
     "watch:tsc": "tsc -w",
     "watch:assets": "onchange \"src/**/*.html\" \"src/**/*.js\" -- run-s build:assets",
