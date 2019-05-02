@@ -1,4 +1,4 @@
-import { TodoItem } from './todo-item.js';
+import { TodoItem } from './todo-item';
 
 const template = document.createElement('template');
 template.innerHTML = `
@@ -28,7 +28,7 @@ template.innerHTML = `
 <ul id="todos"></ul>
 `;
 
-class TodoApp extends HTMLElement {
+export class TodoApp extends HTMLElement {
     private _shadowRoot: ShadowRoot;
     private todoList: HTMLUListElement;
     private input: HTMLInputElement;
